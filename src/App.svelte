@@ -5,9 +5,6 @@
 </main>
 
 <style>
-	input + label {
-		display: inline-flex;
-	}
 	main {
 		/* text-align: center; */
 		padding: 1em;
