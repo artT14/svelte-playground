@@ -1,28 +1,7 @@
 <script>
-	import Card2 from "./components/Card2.svelte";
 </script>
 
 <main>
-	<Card2>
-		<div slot='header'>
-			<h3>Header</h3>
-		</div>
-		<div slot='content'>
-			<img alt src="https://picsum.photos/200"/>
-		</div>
-		<div slot='footer'>
-			<button>View Details</button>
-		</div>
-	</Card2>
-	<Card2/>
-	<Card2>
-		<div slot='header'>
-			<h3>Header</h3>
-		</div>
-		<div slot='content'>
-			<img alt src="https://picsum.photos/200"/>
-		</div>
-	</Card2>
 </main>
 
 <style>
