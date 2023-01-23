@@ -1,0 +1,22 @@
+Svelte Lifecycle Hooks:
+-----------------------
+*onMount        - schedules callback as soon as component is mounted on dom
+                - can return a callback that is called when component is unmounted
+*onDestroy      - schedule callback to run immediately before component is unmounted
+                - similiar to onMount return callback BUT
+                - onDestroy works on Server-side rendered components whereas onMount does not
+*beforeUpdate   - schedules a callback to run immediately before the component is updated
+                - schedules a callback to run immediately after the component has been updated
+                - can access the existing DOM before and after an update
+* tick          - returns a promise that resolve one any pending state changes have been applied
+                - can call any time and not just when the component first initializes
+                - it does help when you want to run some code after pending changes have been applied to the DOM
+
+Svelte Special Elements:
+------------------------
+*svelte:component - for dynamic components
+*svelte:self - allows a component to contain itself recursively
+*svelte:window - add event listeners to the window object
+*svelte:body - listen for events that fire on the document body
+*svelte:head - insert elements inside the <head> of document
+*svelte:options - specify compiler options
